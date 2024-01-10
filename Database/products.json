@@ -1,0 +1,82 @@
+[
+  {
+    "ProductName": "Coffee",
+    "Price": 120.5,
+    "Category": "Beverage"
+  },
+  {
+    "ProductName": "Sandwich",
+    "Price": 150.0,
+    "Category": "Food"
+  },
+  {
+    "ProductName": "Tea",
+    "Price": 20.0,
+    "Category": "Beverage"
+  },
+  {
+    "ProductName": "Salad",
+    "Price": 50.0,
+    "Category": "Food"
+  },
+  {
+    "ProductName": "Soda",
+    "Price": 50.0,
+    "Category": "Beverage"
+  },
+  {
+    "ProductName": "Burger",
+    "Price": 250.0,
+    "Category": "Food"
+  },
+  {
+    "ProductName": "Smoothie",
+    "Price": 140.0,
+    "Category": "Beverage"
+  },
+  {
+    "ProductName": "Pizza",
+    "Price": 300.0,
+    "Category": "Food"
+  },
+  {
+    "ProductName": "Iced Tea",
+    "Price": 50.0,
+    "Category": "Beverage"
+  },
+  {
+    "ProductName": "Pasta",
+    "Price": 60.0,
+    "Category": "Food"
+  },
+  {
+    "ProductName": "Orange Juice",
+    "Price": 80.0,
+    "Category": "Beverage"
+  },
+  {
+    "ProductName": "Chicken Salad",
+    "Price": 220.0,
+    "Category": "Food"
+  },
+  {
+    "ProductName": "Hot Chocolate",
+    "Price": 200.0,
+    "Category": "Beverage"
+  },
+  {
+    "ProductName": "Steak",
+    "Price": 150.0,
+    "Category": "Food"
+  },
+  {
+    "ProductName": "Milkshake",
+    "Price": 120.0,
+    "Category": "Beverage"
+  },
+  {
+    "ProductName": "Mojito",
+    "Price": 140.0,
+    "Category": "Bevrage"
+  }
+]

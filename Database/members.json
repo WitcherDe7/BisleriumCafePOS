@@ -1,0 +1,38 @@
+[
+  {
+    "CustomerName": "David",
+    "CustomerType": "Regular",
+    "PhoneNumber": "9811071992",
+    "Benefit": "10 % Flat Discount"
+  },
+  {
+    "CustomerName": "David Backham",
+    "CustomerType": "Regular",
+    "PhoneNumber": "9811071993",
+    "Benefit": "10 % Flat Discount"
+  },
+  {
+    "CustomerName": "Dien",
+    "CustomerType": "Membership",
+    "PhoneNumber": "9855015225",
+    "Benefit": "1 Free Coffee"
+  },
+  {
+    "CustomerName": "Balen",
+    "CustomerType": "Regular",
+    "PhoneNumber": "",
+    "Benefit": ""
+  },
+  {
+    "CustomerName": "",
+    "CustomerType": "",
+    "PhoneNumber": "",
+    "Benefit": ""
+  },
+  {
+    "CustomerName": "isack",
+    "CustomerType": "Membership",
+    "PhoneNumber": "1",
+    "Benefit": "1 Free Coffee"
+  }
+]

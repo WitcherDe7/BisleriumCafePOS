@@ -1,0 +1,28 @@
+[
+  {
+    "CustomerNumber": "9811071992",
+    "OrderDate": "2024-01-10T09:15:25.4026264+05:45",
+    "OrderItems": [
+      {
+        "ProductName": "Coffee",
+        "Quantity": 1,
+        "Price": 120.5,
+        "Extras": "",
+        "Total": 120.5
+      }
+    ]
+  },
+  {
+    "CustomerNumber": "+9779811014112",
+    "OrderDate": "2024-01-10T09:16:23.8086732+05:45",
+    "OrderItems": [
+      {
+        "ProductName": "Tea",
+        "Quantity": 1,
+        "Price": 21.87165420915543,
+        "Extras": "Extra2",
+        "Total": 21.87165420915543
+      }
+    ]
+  }
+]
