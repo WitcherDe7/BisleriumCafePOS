@@ -31,30 +31,54 @@ namespace BisleriumCafe
 
         private void mainPanel_Paint(object sender, PaintEventArgs e)
         {
-            manageMembership1.Hide();
+            
             manageProduct1.Show();
-            reports1.Hide();
+            manageMembership1.Hide();
+            reports11.Hide();
+            transactionHistory11.Hide();
+            sales1.Hide();
         }
         private void manageProductBtn_Click(object sender, EventArgs e)
         {
             manageProduct1.Show();
             manageMembership1.Hide();
-            reports1.Hide();
-        }
+            reports11.Hide();
+            transactionHistory11.Hide();
+            sales1.Hide();
 
-        private void reportsBtn_Click(object sender, EventArgs e)
-        {
-            reports1.Show();
-            manageMembership1.Hide();
-            manageProduct1.Hide();
-            
         }
 
         private void manageMembershipBtn_Click(object sender, EventArgs e)
         {
             manageMembership1.Show();
             manageProduct1.Hide();
-            reports1.Hide();
+            reports11.Hide();
+            transactionHistory11.Hide();
+            sales1.Hide();
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            reports11.Show();
+            transactionHistory11.Hide();
+            sales1.Hide();
+
+        }
+
+        private void transactionBtn_Click(object sender, EventArgs e)
+        {
+            transactionHistory11.Show();
+            reports11.Hide();
+            sales1.Hide();
+
+        }
+
+        private void salesBtn_Click(object sender, EventArgs e)
+        {
+            sales1.Show();
+            transactionHistory11.Hide();
+            reports11.Hide();
         }
 
         private void logoutBtn_Click(object sender, EventArgs e)
@@ -63,5 +87,7 @@ namespace BisleriumCafe
             Login login = new Login();
             login.Show();
         }
+
+        
     }
 }

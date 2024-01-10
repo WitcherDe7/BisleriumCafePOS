@@ -39,18 +39,6 @@ namespace BisleriumCafe.Admin
             ClearInputFields(); // Clear input fields after adding/editing
         }
 
-        private void deleteBtn_Click(object sender, EventArgs e)
-        {
-            // Delete the selected membership information
-            DeleteMembershipInfo();
-
-            SaveMembershipData(); // Save the updated list to the JSON file
-
-            DisplayMembershipData(); // Display the updated data in the DataGridView
-
-            ClearInputFields(); // Clear input fields after deleting
-        }
-
         private void dataGridViewMembers_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             // Handle cell click to enable editing
@@ -160,6 +148,7 @@ namespace BisleriumCafe.Admin
             guna2DataGridView1.DataSource = null; // Clear existing data source
             guna2DataGridView1.DataSource = membershipList; // Set the list as the new data source
         }
+
     }
 
     // Example class to represent membership information

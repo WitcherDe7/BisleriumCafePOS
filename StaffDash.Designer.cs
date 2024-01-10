@@ -30,6 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffDash));
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.dailyReport1 = new BisleriumCafe.Staff.DailyReport();
+            this.transactionHistory1 = new BisleriumCafe.Staff.TransactionHistory();
+            this.takeOrder1 = new BisleriumCafe.Staff.checkoutBtn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -38,10 +43,8 @@
             this.dailyReportBtn = new Guna.UI2.WinForms.Guna2Button();
             this.TransactionHistoryBtn = new Guna.UI2.WinForms.Guna2Button();
             this.takeOrderBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.takeOrder1 = new BisleriumCafe.Staff.checkoutBtn();
-            this.transactionHistory1 = new BisleriumCafe.Staff.TransactionHistory();
-            this.dailyReport1 = new BisleriumCafe.Staff.DailyReport();
             this.mainPanel.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -49,6 +52,7 @@
             // 
             // mainPanel
             // 
+            this.mainPanel.Controls.Add(this.guna2Panel1);
             this.mainPanel.Controls.Add(this.dailyReport1);
             this.mainPanel.Controls.Add(this.transactionHistory1);
             this.mainPanel.Controls.Add(this.takeOrder1);
@@ -58,6 +62,49 @@
             this.mainPanel.Size = new System.Drawing.Size(953, 800);
             this.mainPanel.TabIndex = 3;
             this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(953, 49);
+            this.guna2Panel1.TabIndex = 6;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(337, 9);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(279, 30);
+            this.guna2HtmlLabel1.TabIndex = 1;
+            this.guna2HtmlLabel1.Text = "Bislerium Cafe | POS SYSTEM";
+            // 
+            // dailyReport1
+            // 
+            this.dailyReport1.Location = new System.Drawing.Point(0, 73);
+            this.dailyReport1.Name = "dailyReport1";
+            this.dailyReport1.Size = new System.Drawing.Size(950, 715);
+            this.dailyReport1.TabIndex = 2;
+            // 
+            // transactionHistory1
+            // 
+            this.transactionHistory1.Location = new System.Drawing.Point(0, 73);
+            this.transactionHistory1.Name = "transactionHistory1";
+            this.transactionHistory1.Size = new System.Drawing.Size(950, 715);
+            this.transactionHistory1.TabIndex = 1;
+            // 
+            // takeOrder1
+            // 
+            this.takeOrder1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.takeOrder1.Location = new System.Drawing.Point(0, 73);
+            this.takeOrder1.Name = "takeOrder1";
+            this.takeOrder1.Size = new System.Drawing.Size(950, 715);
+            this.takeOrder1.TabIndex = 0;
             // 
             // panel1
             // 
@@ -105,6 +152,7 @@
             // 
             // logoutBtnStaff
             // 
+            this.logoutBtnStaff.Animated = true;
             this.logoutBtnStaff.BorderRadius = 5;
             this.logoutBtnStaff.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.logoutBtnStaff.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -126,6 +174,7 @@
             // 
             // dailyReportBtn
             // 
+            this.dailyReportBtn.Animated = true;
             this.dailyReportBtn.BorderRadius = 5;
             this.dailyReportBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.dailyReportBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -147,6 +196,7 @@
             // 
             // TransactionHistoryBtn
             // 
+            this.TransactionHistoryBtn.Animated = true;
             this.TransactionHistoryBtn.BorderRadius = 5;
             this.TransactionHistoryBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.TransactionHistoryBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -168,6 +218,7 @@
             // 
             // takeOrderBtn
             // 
+            this.takeOrderBtn.Animated = true;
             this.takeOrderBtn.BorderRadius = 5;
             this.takeOrderBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.takeOrderBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -187,27 +238,6 @@
             this.takeOrderBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.takeOrderBtn.Click += new System.EventHandler(this.takeOrderBtn_Click);
             // 
-            // takeOrder1
-            // 
-            this.takeOrder1.Location = new System.Drawing.Point(0, 73);
-            this.takeOrder1.Name = "takeOrder1";
-            this.takeOrder1.Size = new System.Drawing.Size(950, 715);
-            this.takeOrder1.TabIndex = 0;
-            // 
-            // transactionHistory1
-            // 
-            this.transactionHistory1.Location = new System.Drawing.Point(0, 73);
-            this.transactionHistory1.Name = "transactionHistory1";
-            this.transactionHistory1.Size = new System.Drawing.Size(950, 715);
-            this.transactionHistory1.TabIndex = 1;
-            // 
-            // dailyReport1
-            // 
-            this.dailyReport1.Location = new System.Drawing.Point(0, 73);
-            this.dailyReport1.Name = "dailyReport1";
-            this.dailyReport1.Size = new System.Drawing.Size(950, 715);
-            this.dailyReport1.TabIndex = 2;
-            // 
             // StaffDash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -220,6 +250,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StaffDash";
             this.mainPanel.ResumeLayout(false);
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -242,5 +274,7 @@
         private Staff.DailyReport dailyReport1;
         private Staff.TransactionHistory transactionHistory1;
         private Staff.checkoutBtn takeOrder1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }

@@ -36,5 +36,10 @@ namespace BisleriumCafe
                 MessageBox.Show("Wrong Credential", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

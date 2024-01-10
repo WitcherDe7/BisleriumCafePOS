@@ -24,29 +24,39 @@ namespace BisleriumCafe.Admin
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
-            // Get product information from your UI controls
-            string productName = productN.Text;
-            decimal price = Convert.ToDecimal(priceN.Text);
-            string category = categoryN.Text;
-
-            // Create a Product object
-            Product product = new Product
+            if (productN.Text == string.Empty || priceN.Text == string.Empty || categoryN.Text == string.Empty)
             {
-                ProductName = productName,
-                Price = price,
-                Category = category
-            };
+                MessageBox.Show("Empty Field, Please Fill all the fields Correctly", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-            // Add the new product to the list
-            products.Add(product);
+            }
+            else
+            {
+                // Get product information from your UI controls
+                string productName = productN.Text;
+                decimal price = Convert.ToDecimal(priceN.Text);
+                string category = categoryN.Text;
 
-            // Save the products to the JSON file
-            SaveProducts();
+                // Create a Product object
+                Product product = new Product
+                {
+                    ProductName = productName,
+                    Price = price,
+                    Category = category
+                };
 
-            // Populate the DataGridView
-            PopulateDataGridView();
+                // Add the new product to the list
+                products.Add(product);
 
-            MessageBox.Show("Product saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                // Save the products to the JSON file
+                SaveProducts();
+
+                // Populate the DataGridView
+                PopulateDataGridView();
+
+                MessageBox.Show("Product saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+
         }
 
         private void LoadProducts()

@@ -16,23 +16,5 @@
     "CustomerType": "Membership",
     "PhoneNumber": "9855015225",
     "Benefit": "1 Free Coffee"
-  },
-  {
-    "CustomerName": "Balen",
-    "CustomerType": "Regular",
-    "PhoneNumber": "",
-    "Benefit": ""
-  },
-  {
-    "CustomerName": "",
-    "CustomerType": "",
-    "PhoneNumber": "",
-    "Benefit": ""
-  },
-  {
-    "CustomerName": "isack",
-    "CustomerType": "Membership",
-    "PhoneNumber": "1",
-    "Benefit": "1 Free Coffee"
   }
 ]

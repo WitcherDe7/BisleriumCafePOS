@@ -34,9 +34,9 @@ namespace BisleriumCafe
         private void TransactionHistoryBtn_Click(object sender, EventArgs e)
         {
             transactionHistory1.Show();
-            takeOrder1.Hide();
             dailyReport1.Hide();
-            
+            takeOrder1.Hide();
+
         }
 
         private void dailyReportBtn_Click(object sender, EventArgs e)

@@ -21,7 +21,7 @@ namespace BisleriumCafe
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StaffDash());
+            Application.Run(new Login());
 
         }
 

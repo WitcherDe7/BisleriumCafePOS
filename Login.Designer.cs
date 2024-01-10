@@ -147,13 +147,14 @@
             this.exitBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.exitBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.exitBtn.FillColor = System.Drawing.Color.White;
-            this.exitBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.exitBtn.ForeColor = System.Drawing.Color.Black;
             this.exitBtn.Location = new System.Drawing.Point(43, 402);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(332, 45);
             this.exitBtn.TabIndex = 3;
             this.exitBtn.Text = "EXIT";
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // guna2HtmlLabel4
             // 

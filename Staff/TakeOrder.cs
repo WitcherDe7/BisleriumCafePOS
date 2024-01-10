@@ -79,7 +79,7 @@ namespace BisleriumCafe.Staff
             Random random = new Random();
 
             // Example extra add-ins with random prices
-            List<string> extras = new List<string> { "Extra1", "Extra2", "Extra3" };
+            List<string> extras = new List<string> { "Cinnamon", "Honey", "Ginger"};
 
             foreach (string extra in extras)
             {
